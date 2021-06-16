@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".login">
+
+    <LinearLayout
+        android:layout_width="348dp"
+        android:layout_height="212dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="41dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="359dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/servis" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Username"
+        android:textColor="#0F0F0F"
+        app:layout_constraintBottom_toTopOf="@+id/editText5"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="299dp"
+        android:layout_height="45dp"
+        android:drawableStart="@drawable/ic_person_black_24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="   Masukkan Username"
+        android:textColor="#747272"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#131212"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="302dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/ic_https_black_24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="   Masukkan Password"
+        android:textColor="#7E7878"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="118dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:background="#FF4F8CD1"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="77dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="24dp"
+        android:background="#FF4F8CD1"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
